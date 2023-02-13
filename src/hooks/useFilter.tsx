@@ -15,7 +15,7 @@ const useFilter = (characters: Array<any>, initial = "") => {
   });
 
   const totalMass = filteredArr.reduce(
-    (sum: number, current: ICharacter) => sum + +current.mass,
+    (sum: number, current: any) => sum + +current.mass,
     0
   );
 
