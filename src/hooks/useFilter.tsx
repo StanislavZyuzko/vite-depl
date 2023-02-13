@@ -14,10 +14,12 @@ const useFilter = (characters: Array<any>, initial = "") => {
     }
   });
 
-  const totalMass = filteredArr.reduce(
-    (sum: number, current: any) => sum + +current.mass,
-    0
-  );
+  // const totalMass = filteredArr.reduce(
+  //   (sum: number, current: any) => sum + +current.mass,
+  //   0
+  // );
+
+  const totalMass = 5;
 
   return {
     value,
